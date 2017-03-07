@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: http://kalpeshpanchal.in/sitemap.xml
+
