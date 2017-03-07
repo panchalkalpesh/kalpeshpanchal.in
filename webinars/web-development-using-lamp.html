@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WEB Development using LAMP - by Kalpesh Panchal</title>
+
+		<meta name="description" content="A brief walk through with the web development process using LAMP stack">
+		<meta name="author" content="Kalpesh Panchal">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>WEB Development </h1>
+					<h3>Using LAMP Stack</h3>
+					<!-- <h1>WEB Development Using LAMP Stack</h1>
+					<h3>Linux / Apache / MySQL / PHP</h3> -->
+					<p>
+						<small> by <a href="http://kalpeshpanchal.in" target="_blank">Kalpesh Panchal</a> / WEB Developer / WEB Consultant</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is LAMP ?</h2>
+					<ul>
+						<li>L - Linux (OS) eg:RedHat, Ubuntu, CentOS </li>
+						<li>A - Apache (Web Server)</li>
+						<li>M - MySQL (Database Server) </li>
+						<li>P - PHP / Python / Perl / PgSQL</li>
+					</ul>
+
+					<aside class="notes">
+						LAMP is widely used over the world wide web.
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Why we use it ?</h2>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Open Source</h2>
+					</section>
+					<section>
+						<h2>More Secure</h2>
+					</section>
+					<section>
+						<h2>Low Costs</h2>
+					</section>
+					<section>
+						<h2>Great Performance</h2>
+					</section>
+					<section>
+						<h2>Highly Scalable</h2>
+						<p>and many more...</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>So, What are we learning today?</h2>
+					<ol>
+						<li class="fragment">Setting up a LAMP development environment</li>
+						<li class="fragment">Object Oriented Programming with PHP</li>
+						<li class="fragment">Build a dynamic website</li>
+						<li class="fragment">Useful functions in PHP</li>
+						<li class="fragment">Database management using PMA (PhpMyAdmin)</li>
+					</ol>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Setting up the development environment
+
+						Open up the terminal (Ctrl + T) and type
+
+						```
+						$ apt-get install lamp-server^
+
+						# or Install Packages separately:
+						$ apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
+
+						# Installing PhpMyAdmin (Optional)
+						$ apt-get install phpmyadmin
+
+						# Configure apache server for phpmyadmin
+						$ nano /etc/apache2/apache2.conf
+						  > Include /etc/phpmyadmin/apache.conf
+
+
+						$ nano /etc/apache2/apache2.conf
+						  > AllowOverride All
+
+						```
+					</script>
+				</section>
+
+				
+				<section data-background="#5f82ba">
+					<h2>Now let's do some programming..!</h2>
+				</section>
+
+				<section>
+					<h2>Few Resources</h2>
+					<ul>
+						<li>Object-Oriented Programming with PHP5 by Hasin Hayder</li>
+						<li>PHP and MySQL Web Development (4th Edition) by Luke Welling &amp; Laura Thomson</li>
+						<li>INTERNET</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THANK YOU</h1>
+					<h3>BY Kalpesh Panchal </h3>
+					<h4>kalpeshpanchal.in</h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			console.log('I like the fact that you are trying to learn this way!');
+
+		</script>
+
+
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44429483-1', 'kalpeshpanchal.in');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script type="text/javascript">
+
+	  (function() {
+
+	    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+
+	    po.src = "https://apis.google.com/js/plusone.js?publisherid=115203249715921850687";
+
+	    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+
+	  })();
+
+	</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+This code is simply for your reference. 
+
+
+error_reporting(-1);
+
+$db=new mysqli('localhost', 'root', 'root', 'webinar');
+
+
+// var_dump($db);
+if ($db->connect_errno > 0){
+	die ('Error connecting db : '. $db->connect_error);
+}
+// echo $db->connect_errno;
+
+
+$sql = 'select * from users';
+/*
+if ($result = $db->query($sql)){
+	while ($row = $result->fetch_assoc()){
+		echo $row['username']. " - " . $row['email'] . "<br/>";
+	}
+}*/
+
+echo "<pre>";
+if ($result = $db->query($sql)){
+	while ($row = $result->fetch_assoc()){
+		// echo $row[0]. " - " . $row[1] . "<br/>";
+		echo $result->num_rows;
+
+		print_r($row);
+	}
+}
+
+
+// $db->close();
+
+$statement = $db->prepare("select * from `users` where `username`= ? ");
+$value='Kalpesh';
+$statement->bind_param('s', $value);
+$statement->execute();
+$statement->bind_result($arrReturn);
+print_r($statement);
+
+while($statement->fetch()){
+	echo $arrReturn . "<br/>";
+}
+
+/*
+$sql2 = "insert into users(`username`, `email`) values ('user1', 'user1@mail.com')";
+
+if ($result2 = $db->query($sql2)){
+	var_dump($result2);
+}*/
+
+
+/*$sql3 = "delete from users where `username`='user2'";
+
+if ($result2 = $db->query($sql3)){
+	var_dump($result2);
+}*/
+
+
+
+-->
