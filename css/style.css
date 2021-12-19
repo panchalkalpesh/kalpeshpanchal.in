@@ -1226,3 +1226,8 @@ textarea {
 	opacity: 0.1;
 	font-size: 8px;
 }
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
