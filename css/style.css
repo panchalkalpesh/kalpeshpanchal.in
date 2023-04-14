@@ -731,6 +731,7 @@ ul#navigation li span {
 #resume .place {
 	float: left;
 	width: 400px;
+	width: 100%;
 }
 #resume .time {
 	float:right;
