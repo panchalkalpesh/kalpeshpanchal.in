@@ -144,7 +144,7 @@ function submitSuccess() {
     // 1. Display the success message
     // 2. Clear the form fields
     // 3. Fade the content back in
-
+    $('#sendingMessage').fadeOut();
     $('#successMessage').fadeIn().delay(messageDelay).fadeOut();
     $('#senderName').val("");
     $('#senderEmail').val("");
