@@ -789,6 +789,17 @@ ul#navigation li span {
     color: #fff;
     margin-bottom: 5px;
 }
+
+.skills .angular {
+	background:#e90364;
+}
+.skills .react {
+	background:#58c4dc;
+}
+.skills .accessibility {
+	background:#005a9c;
+}
+
 .skills .jq {
 	background:#b72228;
 }
@@ -796,7 +807,7 @@ ul#navigation li span {
 	background:#6286a8;
 }
 .skills .html {
-	background:#88B8E6;
+	background:#e44d26;
 }
 .skills .php {
 	/*background:#BEDBE9;*/
@@ -807,7 +818,7 @@ ul#navigation li span {
 	background:#e97b00;
 }
 .skills .html5-css3 {
-	background:#88b8e6;
+	background:#e44d26;
 }
 .skills .wp {
 	background:#1e8cbe;
