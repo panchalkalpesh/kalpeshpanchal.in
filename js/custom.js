@@ -173,6 +173,7 @@ function submitFinished(response) {
 /////////////////* GOOGLE MAPS SETTINGS */////////////////////////
 
 function load() {
+    return;
     var point = new google.maps.LatLng(43.6586831, -79.3766367);
 
 
