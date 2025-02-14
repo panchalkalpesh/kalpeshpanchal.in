@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://kalpeshpanchal.in/</loc>
+  <loc>https://kalpeshpanchal.in/</loc>
   <lastmod>2014-07-21T09:21:46+00:00</lastmod>
   <changefreq>always</changefreq>
 </url>
 
 <url>
-  <loc>http://kalpeshpanchal.in/webinars/web-development-using-lamp.html</loc>
+  <loc>https://kalpeshpanchal.in/webinars/web-development-using-lamp.html</loc>
   <lastmod>2014-09-01T09:21:46+00:00</lastmod>
   <changefreq>always</changefreq>
 </url>
